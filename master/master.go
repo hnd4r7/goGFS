@@ -3,12 +3,13 @@ package master
 import (
 	"encoding/gob"
 	"fmt"
-	log "github.com/Sirupsen/logrus"
 	"net"
 	"net/rpc"
 	"os"
 	"path"
 	"time"
+
+	log "github.com/sirupsen/logrus"
 
 	"gfs"
 	"gfs/util"

@@ -9,7 +9,8 @@ import (
 	"gfs"
 	"gfs/chunkserver"
 	"gfs/util"
-	log "github.com/Sirupsen/logrus"
+
+	log "github.com/sirupsen/logrus"
 )
 
 // Client struct is the GFS client-side driver

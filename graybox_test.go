@@ -9,9 +9,11 @@ import (
 	"reflect"
 
 	"fmt"
-	log "github.com/Sirupsen/logrus"
 	"io"
 	"io/ioutil"
+
+	log "github.com/sirupsen/logrus"
+
 	//"math/rand"
 	"os"
 	"path"

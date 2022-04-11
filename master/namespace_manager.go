@@ -7,7 +7,8 @@ import (
 	"sync"
 
 	"gfs"
-	log "github.com/Sirupsen/logrus"
+
+	log "github.com/sirupsen/logrus"
 )
 
 type namespaceManager struct {

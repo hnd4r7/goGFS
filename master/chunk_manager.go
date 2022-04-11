@@ -8,7 +8,8 @@ import (
 
 	"gfs"
 	"gfs/util"
-	log "github.com/Sirupsen/logrus"
+
+	log "github.com/sirupsen/logrus"
 )
 
 // chunkManager manges chunks
