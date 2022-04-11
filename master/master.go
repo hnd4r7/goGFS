@@ -11,7 +11,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"gfs"
+	gfs "gfs/model"
 	"gfs/util"
 )
 

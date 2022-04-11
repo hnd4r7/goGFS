@@ -1,7 +1,7 @@
 package client
 
 import (
-	"gfs"
+	gfs "gfs/model"
 	"gfs/util"
 	"sync"
 	"time"

@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"gfs"
+	gfs "gfs/model"
 )
 
 type downloadItem struct {

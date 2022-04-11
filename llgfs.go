@@ -8,9 +8,9 @@ import (
 	//"math/rand"
 	//"time"
 
-	"gfs"
 	"gfs/chunkserver"
 	"gfs/master"
+	gfs "gfs/model"
 	"os"
 )
 

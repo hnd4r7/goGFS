@@ -6,8 +6,8 @@ import (
 	"math/rand"
 	"time"
 
-	"gfs"
 	"gfs/chunkserver"
+	gfs "gfs/model"
 	"gfs/util"
 
 	log "github.com/sirupsen/logrus"

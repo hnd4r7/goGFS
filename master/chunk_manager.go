@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"gfs"
+	gfs "gfs/model"
 	"gfs/util"
 
 	log "github.com/sirupsen/logrus"

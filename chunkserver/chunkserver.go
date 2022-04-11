@@ -2,7 +2,9 @@ package chunkserver
 
 import (
 	"fmt"
-	log  "github.com/sirupsen/logrus"
+
+	log "github.com/sirupsen/logrus"
+
 	//"math/rand"
 	"encoding/gob"
 	"io"
@@ -12,9 +14,10 @@ import (
 	"path"
 	"sync"
 	"time"
+
 	//"strings"
 
-	"gfs"
+	gfs "gfs/model"
 	"gfs/util"
 )
 
@@ -57,13 +60,13 @@ const (
 // NewAndServe starts a chunkserver and return the pointer to it.
 func NewAndServe(addr, masterAddr gfs.ServerAddress, rootDir string) *ChunkServer {
 	cs := &ChunkServer{
-		address:  addr,
-		shutdown: make(chan struct{}),
-		master:   masterAddr,
-		rootDir:  rootDir,
-		dl:       newDownloadBuffer(gfs.DownloadBufferExpire, gfs.DownloadBufferTick),
+		address:                addr,
+		shutdown:               make(chan struct{}),
+		master:                 masterAddr,
+		rootDir:                rootDir,
+		dl:                     newDownloadBuffer(gfs.DownloadBufferExpire, gfs.DownloadBufferTick),
 		pendingLeaseExtensions: new(util.ArraySet),
-		chunk: make(map[gfs.ChunkHandle]*chunkInfo),
+		chunk:                  make(map[gfs.ChunkHandle]*chunkInfo),
 	}
 	rpcs := rpc.NewServer()
 	rpcs.Register(cs)

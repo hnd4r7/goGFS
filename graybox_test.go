@@ -1,10 +1,10 @@
 package main
 
 import (
-	"gfs"
 	"gfs/chunkserver"
 	"gfs/client"
 	"gfs/master"
+	gfs "gfs/model"
 	"gfs/util"
 	"reflect"
 
